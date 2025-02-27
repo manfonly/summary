@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "中文概述",
+  "version": "1.0",
+  "description": "添加右键菜单显示中文概述",
+  "permissions": ["contextMenus", "scripting", "activeTab", "sidePanel", "storage"],
+  "host_permissions": ["https://api.moonshot.cn/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "options_page": "options.html"
+}

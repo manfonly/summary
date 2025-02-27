@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"], textarea {
+            width: 300px;
+            padding: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        .status {
+            margin-top: 10px;
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-group">
+        <label for="apiKey">Kimi API Key:</label><br>
+        <input type="text" id="apiKey" placeholder="请输入你的 Kimi API Key">
+    </div>
+    <div class="form-group">
+        <label for="prompt">提示词:</label><br>
+        <textarea id="prompt" placeholder="请输入提示词"></textarea>
+    </div>
+    <button id="save">保存</button>
+    <div id="status" class="status">已保存！</div>
+    <script src="options.js"></script>
+</body>
+</html>
