@@ -3,6 +3,12 @@
   "name": "中文概述",
   "version": "1.0",
   "description": "添加右键菜单显示中文概述",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "permissions": ["contextMenus", "scripting", "activeTab", "sidePanel", "storage"],
   "host_permissions": ["https://api.moonshot.cn/*"],
   "background": {
